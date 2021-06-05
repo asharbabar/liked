@@ -1,0 +1,30 @@
+{
+  "name": "liked",
+  "version": "1.0.0",
+  "description": "A demo react application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-client": "npm install && cd client && npm install",
+    "install-server": "cd server && npm install",
+    "install-all": "npm run install-client && cd server && npm install",
+    "start-app": "concurrently \"cd client && npm run start\" \"cd server && npm run dev\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanhssn/liked.git"
+  },
+  "keywords": [
+    "react",
+    "node"
+  ],
+  "author": "Bilal Hussain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanhssn/liked/issues"
+  },
+  "homepage": "https://github.com/ryanhssn/liked#readme",
+  "dependencies": {
+    "concurrently": "^6.2.0"
+  }
+}
