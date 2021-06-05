@@ -26,6 +26,16 @@ app.get("/api/all-posts", async (req, res) => {
   } catch (error) {
     res.status(400).send({ error: '⚠️ Something went wrong!!!'})
   }
+});
+
+app.post("/api/update-like", async (req, res) => {
+  try {
+    const { id, action } = req.body;
+    const findAndUpdate = await Posts.findByIdAndUpdate(id, { liked: action }, {useFindAndModify: false});
+    if(findAndUpdate) res.send({ status: 204 });
+  } catch (error) {
+    res.status(400).send({ error: '⚠️ Something went wrong!!!'})
+  }
 })
 
 app.listen(PORT, () => {
