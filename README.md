@@ -39,5 +39,6 @@ Confirmation Modal <br />
 <br />
 
 Desktop view <br />
-<img width="1658" alt="Pasted Graphic 9" src="https://user-images.githubusercontent.com/26794840/120898497-24a40b00-c63c-11eb-853f-71be8941ec44.png">
+![image](https://user-images.githubusercontent.com/26794840/120899393-90887280-c640-11eb-8952-78c71b242bfd.png)
+
 
