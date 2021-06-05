@@ -15,7 +15,7 @@ For ex:
 `mongoURI: "mongodb+srv://user:password@cluster.hgypt.mongodb.net/database?retryWrites=true&w=majority"`
 
 ### Install Dependencies 
-In root folder, run `npm install-all`, this will install third party dependencies for both `client` & `server`. <br />
+In root folder, run `npm run install-all`, this will install third party dependencies for both `client` & `server`. <br />
 Once success, run `npm run start-app`, this will start development server and you should be able to see app on screen. 📺 
 
 Alternatively, you can navigate to `localhost:3000`
