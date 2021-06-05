@@ -13,9 +13,8 @@ export default function ImageCard({ postImage, username, title, description, pic
 
   const history = useHistory();
 
-  async function unlikePost({ id }) {
+  async function likePost({ id }) {
     const response = await axios.post("/api/update-like", { id, action: true});
-    console.log('response', response);
     const { status } = get(response, 'data');
     if (status === 204) history.push("/liked")
   }
@@ -37,7 +36,7 @@ export default function ImageCard({ postImage, username, title, description, pic
             <p>{title}</p>
             <h3>AED {price}</h3>
           </div>
-          <button className="like-button" onClick={() => unlikePost({ id })}><MdFavorite /></button>
+          <button className="like-button" onClick={() => likePost({ id })}><MdFavorite /></button>
         </div>
       </div>
       <div className={`${blockName}__content`}>
